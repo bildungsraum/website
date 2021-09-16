@@ -104,14 +104,14 @@
      <div className="text--center">
        <h1>{TITLE}</h1>
        <p>{DESCRIPTION}</p>
-       <p>
+       {/* <p>
          <a
            className={'button button--primary'}
            href={EDIT_URL}
            target={'_blank'}>
            🙏 Add your site now!
          </a>
-       </p>
+       </p> */}
      </div>
    );
  }
