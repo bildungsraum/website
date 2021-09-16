@@ -31,7 +31,7 @@ const FeatureList = [
     link: 'blog',
     description: (
       <>
-        Häufig gestellte Fragen
+        Blog mit Neuigkeiten aus der NBP und den Projekten
       </>
     ),
   },
