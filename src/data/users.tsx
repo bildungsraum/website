@@ -59,7 +59,14 @@
      source: 'https://github.com/janrenz',
      tags: ['opensource'],
    },
-
+   {
+    title: 'INVITE',
+    description: 'Innovationswettbewerb Digitale Plattform berufliche Weiterbildung',
+    preview: require('./showcase/netzwerk_logo.jpeg'),
+    website: 'https://www.bmbf.de/bmbf/de/bildung/berufliche-bildung/foerderinitiativen-und-program-ur-staerkung-der-berufsbildung/innovationswettbewerb-invite/innovationswettbewerb-invite.html',
+    source: '',
+    tags: [],
+  },
 
    /*
    Pro Tip: add your site in alphabetical order.

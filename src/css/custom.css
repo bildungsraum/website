@@ -68,8 +68,15 @@ html[data-theme='dark'] .navbar__brand img{
   padding-right: 0px;
   border-bottom: 4px solid rgba(0, 0, 0, 0);
 }
+
 .navbar__link--active {
-    border-bottom: 4px solid #004F80;
+  border-bottom: 4px solid #004F80;
+}
+html[data-theme='dark'] .navbar__link--active {
+  border-bottom: 4px solid #FFFFFF;
+}
+html[data-theme='dark'] a {
+  color: rgb( 128, 205, 236);
 }
 .navbar__title {
   text-overflow: inherit;

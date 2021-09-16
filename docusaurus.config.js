@@ -13,6 +13,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/favicon.ico',
   organizationName: 'bildungsraum', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
+  themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    }
+  },
   i18n: {
     defaultLocale: 'de',
     locales: ['de'],
