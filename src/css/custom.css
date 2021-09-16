@@ -20,6 +20,10 @@ h1, h2, h3, .navbar__title, .navbar{
   font-family:"bundesserifweb",Cambria, Georgia, Times New Roman, serif;
   font-weight: bold;
 }
+.heroBanner_src-pages-index-module {
+ background-image: url(../../static/img/bluebg.svg);
+ background-size: contain;
+}
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
