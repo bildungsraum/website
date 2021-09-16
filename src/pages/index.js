@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Doku der Nationalen Bildungsplattform">
+      description="Doku der Nationalen Bildungsplattform (WIP)">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

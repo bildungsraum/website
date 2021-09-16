@@ -16,8 +16,8 @@
   --ifm-code-font-size: 95%;
   font-family:"bundessansweb",Calibri,"Droid Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
-h1, h2, h3{
-  font-family:"bundesserifweb","Droid Serif",serif;
+h1, h2, h3, .navbar__title{
+  font-family:"bundesserifweb",Cambria, Georgia, Times New Roman, serif;
   font-weight: bold;
 }
 .docusaurus-highlight-code-line {
@@ -37,20 +37,20 @@ html[data-theme='dark'] .navbar__brand img{
 
 @font-face {
   font-family: bundessansweb;
-  src: url(https://www.bmbf.de/static/fonts/BundesSchrift/BundesSansWeb-Bold.woff);
+  src: url(../../static/fonts/BundesSansWeb-Bold.woff);
   font-weight: bold;
 }
 @font-face {
   font-family: bundessansweb;
-  src: url(https://www.bmbf.de/static/fonts/BundesSchrift/BundesSansWeb-Regular.woff);
+  src: url(../../static/fonts/BundesSansWeb-Regular.woff);
 }
 @font-face {
   font-family: bundesserifweb;
-  src: url(https://www.bmbf.de/static/fonts/BundesSchrift/BundesSerifWeb-Bold.woff);
+  src: url(../../static/fonts/BundesSerifWeb-Bold.woff);
   font-weight: bold;
 }
 @font-face {
   font-family: bundesserifweb;
-  src: url(https://www.bmbf.de/static/fonts/BundesSchrift/BundesSWeb-Regular.woff);
+  src: url(../../static/fonts/BundesSerifWeb-Regular.woff);
 
 }

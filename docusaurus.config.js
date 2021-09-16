@@ -61,7 +61,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Projekte',
             to: '/showcase',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/bildungsraum/website',
             label: 'GitHub',
@@ -78,6 +78,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/api',
               },
             ],
           },
@@ -101,10 +105,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: 'Mehr',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/bildungsraum/website',

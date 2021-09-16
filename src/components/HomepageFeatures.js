@@ -26,9 +26,9 @@ const FeatureList = [
     ),
   },
   {
-    title: 'FAQs',
+    title: 'Blog',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
-    link: 'faq',
+    link: 'blog',
     description: (
       <>
         Häufig gestellte Fragen
