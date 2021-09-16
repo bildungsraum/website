@@ -101,7 +101,7 @@
  const Users: User[] = [
    {
      title: 'Netzwerk Digitale Bildung',
-     description: 'Nur ein Demoeiontrag',
+     description: 'Nur ein Demoeintrag',
      preview: require('./showcase/netzwerk_logo.jpeg'),
      website: 'https://janrenz.de',
      source: 'https://github.com/janrenz',
