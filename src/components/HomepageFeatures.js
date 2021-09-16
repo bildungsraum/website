@@ -16,7 +16,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Tutorial',
+    title: 'Dokumentation',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     link: 'docs/intro',
     description: (
