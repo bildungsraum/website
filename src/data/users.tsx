@@ -1,43 +1,6 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
  import React from 'react';
  import {difference, sortBy} from '../utils/jsUtils';
- 
- /*
-  * ADD YOUR SITE TO THE DOCUSAURUS SHOWCASE:
-  *
-  * Requirements for adding your site to our showcase:
-  * - It is a production-ready site with real content and decent customizations (different from the init templates)
-  * - It is NOT a work-in-progress with empty pages
-  * - It has a stable domain name (a Netlify/Vercel deploy preview is not allowed)
-  *
-  * Instructions:
-  * - Add your site in the json array below
-  * - Add a local image preview (decent screenshot of your Docusaurus site)
-  * - Use relevant tags to qualify your site (read the tag descriptions bellow)
-  * - The image MUST be added to the GitHub repository, and use `require("image")`
-  * - Open a PR and check for reported CI errors
-  *
-  * Example PR: https://github.com/facebook/docusaurus/pull/3976
-  *
-  * If you edit this file through the Github interface, you can:
-  * - Submit first your users.js edit PR
-  * - This will create a branch on your Docusaurus fork (usually "patch-1")
-  * - Go to https://github.com/<username>/docusaurus/tree/<branch>/website/src/data/showcase
-  * - Drag-and-drop an image here to add it to your existing PR
-  *
-  * Please help us maintain this showcase page data:
-  * - Update sites with wrong data
-  * - Ensure site tags remains correct over time
-  * - Remove sites not using Docusaurus anymore
-  * - Add missing Docusaurus sites (if the site owner agreed)
-  *
-  */
+
  
  export type Tag = {
    label: string;
@@ -57,7 +20,7 @@
    source: string;
    tags: TagType[];
  };
- 
+
  // LIST OF AVAILABLE TAGS
  // Available tags to assign to your site
  // Please choose widely, we'll remove unappropriate tags
@@ -69,27 +32,27 @@
      description: 'Open-Source Docusaurus sites can be useful for inspiration!',
      icon: <>👨‍💻</>,
    },
- 
-   product: {
-     label: 'Product',
-     description: 'Docusaurus sites associated to a commercial product!',
-     icon: <>💵</>,
+
+   ziel3: {
+     label: 'Ziel 3',
+     description: 'Infrastrukturprototyp',
+     icon: <>⚛</>,
    },
- 
+
    design: {
      label: 'Design',
      description:
        'Beautiful Docusaurus sites, polished and standing out from the initial template!',
      icon: <>💅</>,
    },
- 
+
    i18n: {
      label: 'I18n',
      description:
        'Translated Docusaurus sites using the internationalization support with more than 1 locale.',
      icon: <>🏳️</>,
    },
- 
+
    versioning: {
      label: 'Versioning',
      description:
@@ -103,7 +66,7 @@
        'Docusaurus sites using multiple instances of the same plugin on the same site.',
      icon: <>👨‍👩‍👧‍👦</>,
    },
- 
+
    // Large Docusaurus sites, with a lot of content (> 200 pages, excluding versions)
    large: {
      label: 'Large site',
@@ -111,20 +74,20 @@
        'Very large Docusaurus sites, including much more pages than the average!',
      icon: <>💪</>,
    },
- 
+
    facebook: {
      label: 'Facebook sites',
      description: 'Docusaurus sites of Facebook projects',
      icon: <>👥</>,
    },
- 
+
    personal: {
      label: 'Personal sites',
      description:
        'Personal websites, blogs and digital gardens built with Docusaurus',
      icon: <>🙋</>,
    },
- 
+
    rtl: {
      label: 'RTL Direction',
      description:
@@ -132,7 +95,7 @@
      icon: <>↪️</>,
    },
  };
- 
+
  // Add your site to this list
  // prettier-ignore
  const Users: User[] = [
@@ -145,13 +108,13 @@
      tags: ['opensource'],
    },
 
- 
+
    /*
    Pro Tip: add your site in alphabetical order.
    Appending your site here (at the end) is more likely to produce Git conflicts.
     */
  ];
- 
+
  export const TagList = Object.keys(Tags) as TagType[];
  function sortUsers() {
    let result = Users;
