@@ -52,5 +52,17 @@ html[data-theme='dark'] .navbar__brand img{
 @font-face {
   font-family: bundesserifweb;
   src: url(../../static/fonts/BundesSerifWeb-Regular.woff);
-
+}
+.navbar__link {
+  margin-top: 2px;
+  padding-bottom: 12px;
+  margin-bottom: -12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+.navbar__link--active {
+    border-bottom: 4px solid #004F80;
 }

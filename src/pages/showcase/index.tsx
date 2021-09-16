@@ -20,8 +20,8 @@
 
  type Operator = 'OR' | 'AND';
 
- const TITLE = 'Piloten und Projekte';
- const DESCRIPTION = 'Liste von Piloten und Projekten rund um die NBP';
+ const TITLE = 'Prototypen und Projekte';
+ const DESCRIPTION = 'Liste von Prototypen und Projekten rund um die NBP';
  const EDIT_URL =
    'https://github.com/bildungsraum/website/edit/main/website/src/data/users.tsx';
 
@@ -188,7 +188,7 @@
            </div>
          ) : (
            <div className={clsx('padding-vert--md text--center')}>
-             <h3>No result</h3>
+             <h3>Keine Ergebnisse für diese Filterkriterien.</h3>
            </div>
          )}
        </div>

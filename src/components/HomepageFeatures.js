@@ -6,12 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Projekte und Piloten',
+    title: 'Prototypen und Piloten',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     link: 'showcase',
     description: (
       <>
-        Übersicht über die Projekte.
+        Übersicht über die Projekte und Prototypen.
       </>
     ),
   },

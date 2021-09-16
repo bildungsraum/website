@@ -73,14 +73,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Dokumentation',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
               {
-                label: 'API',
+                label: 'Schnittstellen',
                 to: '/docs/api/api',
               },
             ],
@@ -108,6 +108,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'BMBF Projektseite',
+                to: 'https://www.bmbf.de/bmbf/de/bildung/alle-informationen-zum-digitalen-lehren-und-lernen/alle-informationen-zum-digitalen-lehren-und-lernen-bmbf.html'
               },
               {
                 label: 'Impressum',
