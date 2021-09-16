@@ -20,8 +20,8 @@
 
  type Operator = 'OR' | 'AND';
 
- const TITLE = 'NBP Projekte';
- const DESCRIPTION = 'Liste von Piloten und Projekten';
+ const TITLE = 'Piloten und Projekte';
+ const DESCRIPTION = 'Liste von Piloten und Projekten rund um die NBP';
  const EDIT_URL =
    'https://github.com/bildungsraum/website/edit/main/website/src/data/users.tsx';
 

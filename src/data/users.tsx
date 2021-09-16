@@ -35,65 +35,17 @@
 
    ziel3: {
      label: 'Ziel 3',
-     description: 'Infrastrukturprototyp',
+     description: 'Infrastrukturprototypen',
      icon: <>⚛</>,
    },
 
-   design: {
-     label: 'Design',
-     description:
-       'Beautiful Docusaurus sites, polished and standing out from the initial template!',
-     icon: <>💅</>,
-   },
+   ziel1und2: {
+    label: 'Ziel 1 und 2',
+    description: 'Angebote und Dienste',
+    icon: <>⚛</>,
+  },
 
-   i18n: {
-     label: 'I18n',
-     description:
-       'Translated Docusaurus sites using the internationalization support with more than 1 locale.',
-     icon: <>🏳️</>,
-   },
-
-   versioning: {
-     label: 'Versioning',
-     description:
-       'Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.',
-     icon: <>👨‍👦‍👦</>,
-   },
-   // Sites using multi-instance plugins
-   multiInstance: {
-     label: 'Multi-Instance',
-     description:
-       'Docusaurus sites using multiple instances of the same plugin on the same site.',
-     icon: <>👨‍👩‍👧‍👦</>,
-   },
-
-   // Large Docusaurus sites, with a lot of content (> 200 pages, excluding versions)
-   large: {
-     label: 'Large site',
-     description:
-       'Very large Docusaurus sites, including much more pages than the average!',
-     icon: <>💪</>,
-   },
-
-   facebook: {
-     label: 'Facebook sites',
-     description: 'Docusaurus sites of Facebook projects',
-     icon: <>👥</>,
-   },
-
-   personal: {
-     label: 'Personal sites',
-     description:
-       'Personal websites, blogs and digital gardens built with Docusaurus',
-     icon: <>🙋</>,
-   },
-
-   rtl: {
-     label: 'RTL Direction',
-     description:
-       'Docusaurus sites using the right-to-left reading direction support.',
-     icon: <>↪️</>,
-   },
+   
  };
 
  // Add your site to this list
