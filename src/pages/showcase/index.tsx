@@ -174,7 +174,7 @@
    return (
      <section className="container margin-top--lg">
        <h2>
-         {filteredUsers.length} site{filteredUsers.length > 1 ? 's' : ''}
+         {filteredUsers.length} Projekt{filteredUsers.length > 1 ? 'e' : ''}
        </h2>
        <div className="margin-top--lg">
          {filteredUsers.length > 0 ? (
