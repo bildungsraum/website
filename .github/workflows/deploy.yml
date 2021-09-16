@@ -54,4 +54,4 @@ jobs:
           else
             npm i
           fi
-          DEPLOYMENT_BRANCH=main npm run deploy
+          DEPLOYMENT_BRANCH=gh_pages npm run deploy
