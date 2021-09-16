@@ -12,19 +12,19 @@
  import ShowcaseSelect from '@site/src/components/showcase/ShowcaseSelect';
  import ShowcaseCard from '@site/src/components/showcase/ShowcaseCard';
  import clsx from 'clsx';
- 
+
  import {useHistory, useLocation} from '@docusaurus/router';
- 
+
  import {toggleListItem} from '../../utils/jsUtils';
  import {SortedUsers, Tags, TagList, User, TagType} from '../../data/users';
- 
+
  type Operator = 'OR' | 'AND';
- 
+
  const TITLE = 'NBP Projekte';
  const DESCRIPTION = 'Liste von Piloten und Projekten';
  const EDIT_URL =
    'https://github.com/bildungsraum/website/edit/main/website/src/data/users.tsx';
- 
+
  function filterUsers(
    users: User[],
    selectedTags: TagType[],
@@ -44,7 +44,7 @@
      }
    });
  }
- 
+
  function useFilteredUsers(
    users: User[],
    selectedTags: TagType[],
@@ -56,34 +56,34 @@
      operator,
    ]);
  }
- 
+
  const TagQueryStringKey = 'tags';
- 
+
  function readSearchTags(search: string) {
    return new URLSearchParams(search).getAll(TagQueryStringKey) as TagType[];
  }
- 
+
  function replaceSearchTags(search: string, newTags: TagType[]) {
    const searchParams = new URLSearchParams(search);
    searchParams.delete(TagQueryStringKey);
    newTags.forEach((tag) => searchParams.append(TagQueryStringKey, tag));
    return searchParams.toString();
  }
- 
+
  function useSelectedTags() {
    // The search query-string is the source of truth!
    const location = useLocation();
    const {push} = useHistory();
- 
+
    // On SSR / first mount (hydration) no tag is selected
    const [selectedTags, setSelectedTags] = useState<TagType[]>([]);
- 
+
    // Sync tags from QS to state (delayed on purpose to avoid SSR/Client hydration mismatch)
    useEffect(() => {
      const tags = readSearchTags(location.search);
      setSelectedTags(tags);
    }, [location, setSelectedTags]);
- 
+
    // Update the QS value
    const toggleTag = useCallback(
      (tag: TagType) => {
@@ -95,10 +95,10 @@
      },
      [location, push],
    );
- 
+
    return {selectedTags, toggleTag};
  }
- 
+
  function ShowcaseHeader() {
    return (
      <div className="text--center">
@@ -115,14 +115,14 @@
      </div>
    );
  }
- 
+
  interface Props {
    selectedTags: TagType[];
    toggleTag: (tag: TagType) => void;
    operator: Operator;
    setOperator: (op: Operator) => void;
  }
- 
+
  function ShowcaseFilters({
    selectedTags,
    toggleTag,
@@ -169,7 +169,7 @@
      </div>
    );
  }
- 
+
  function ShowcaseCards({filteredUsers}: {filteredUsers: User[]}) {
    return (
      <section className="container margin-top--lg">
@@ -195,7 +195,7 @@
      </section>
    );
  }
- 
+
  function Showcase() {
    const {selectedTags, toggleTag} = useSelectedTags();
    const [operator, setOperator] = useState<Operator>('OR');
@@ -215,5 +215,5 @@
      </Layout>
    );
  }
- 
+
  export default Showcase;
