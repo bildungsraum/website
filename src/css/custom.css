@@ -23,6 +23,7 @@ h1, h2, h3, .navbar__title, .navbar{
 .hero--primary{
  background-image: url(../../static/img/bluebg.svg);
  background-size: contain;
+  --ifm-hero-text-color: white;
 }
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
