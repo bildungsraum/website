@@ -12,7 +12,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'bildungsraum', // Usually your GitHub org/user name.
-  projectName: 'bildungsraum.github.io', // Usually your repo name.
+  projectName: 'website', // Usually your repo name.
   i18n: {
     defaultLocale: 'de',
     locales: ['de'],
@@ -25,13 +25,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/bildungsraum/docs/edit/main/docs/',
+          editUrl: 'https://github.com/bildungsraum/website/edit/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/bildungsraum/docs/edit/main/website/blog/',
+            'https://github.com/bildungsraum/website/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,7 +58,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/bildungsraum/docs',
+            href: 'https://github.com/bildungsraum/website',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,7 +102,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/bildungsraum/docs',
+                href: 'https://github.com/bildungsraum/website',
               },
             ],
           },
