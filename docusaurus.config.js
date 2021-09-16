@@ -110,6 +110,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/blog',
               },
               {
+                label: 'Impressum',
+                to: '/impressum',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/bildungsraum/website',
               },
