@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Nationaler Bildungsraum und Plattform',
-  tagline: 'Projektneuigkeiten und Dokumentation für Entwickler und Bildungsanbieter',
+  tagline: 'Dokumentation für Entwickler und Bildungsanbieter in der Pilotphase',
   url: 'https://bildungsraum.github.io',
   baseUrl: '/website/',
   onBrokenLinks: 'throw',
