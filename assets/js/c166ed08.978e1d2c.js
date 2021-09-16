@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknbp_docs=self.webpackChunknbp_docs||[]).push([[693],{4545:function(s){s.exports=JSON.parse('{"allTagsPath":"/website/blog/tags","slug":"/website/blog/tags/bird","name":"bird","count":1,"permalink":"/website/blog/tags/bird"}')}}]);
