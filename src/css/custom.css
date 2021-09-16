@@ -70,3 +70,9 @@ html[data-theme='dark'] .navbar__brand img{
 .navbar__link--active {
     border-bottom: 4px solid #004F80;
 }
+
+@media only screen and (max-width: 600px) {
+  .hero__title {
+    font-size: 1.5rem;
+  }
+}
