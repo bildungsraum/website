@@ -17,6 +17,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     defaultLocale: 'de',
     locales: ['de'],
   },
+  plugins: ['@docusaurus/plugin-ideal-image'],
   presets: [
     [
       '@docusaurus/preset-classic',
