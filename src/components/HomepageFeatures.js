@@ -1,40 +1,43 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Pilotprojekt BIRD',
+    title: 'Projekte und Piloten',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    link: 'showcase',
     description: (
       <>
-        Das BMBF fördert den ersten Prototypen einer technischen Infrastruktur für eine digitale Bildungsplattform.
+        Übersicht über die Projekte.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Tutorial',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    link: 'docs/intro',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        So verbinden Sie als Teilnehmer der Pilotphase Ihr Angebot
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'FAQs',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    link: 'faq',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Häufig gestellte Fragen
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -43,6 +46,11 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        <Link
+            className="button button--secondary button--sm"
+            to={useBaseUrl(link)}>
+            mehr
+        </Link>
       </div>
     </div>
   );
