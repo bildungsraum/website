@@ -65,7 +65,7 @@ const ShowcaseCard = memo(function ({user}: {user: User}) {
             </div>
           </div>
         </div>
-        {(user.website || user.source) && (
+        {(user.website || user.source || user.blocktag) && (
           <div className="card__footer">
             <div className="button-group button-group--block">
               {user.website && (
@@ -84,6 +84,14 @@ const ShowcaseCard = memo(function ({user}: {user: User}) {
                   target="_blank"
                   rel="noreferrer noopener">
                   Source
+                </a>
+              )}
+              {user.blocktag && (
+                <a
+                  className="button button--small button--secondary button--block"
+                  href={'blog/tags/' + user.blocktag}
+                  rel="noreferrer noopener">
+                  Blog
                 </a>
               )}
             </div>

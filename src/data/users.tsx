@@ -19,6 +19,7 @@
    website: string;
    source: string;
    tags: TagType[];
+   blocktag: string;
  };
 
  // LIST OF AVAILABLE TAGS
@@ -58,6 +59,7 @@
      website: 'https://janrenz.de',
      source: 'https://github.com/janrenz',
      tags: ['opensource'],
+     blocktag: 'bird'
    },
    {
     title: 'INVITE',
@@ -66,6 +68,7 @@
     website: 'https://www.bmbf.de/bmbf/de/bildung/berufliche-bildung/foerderinitiativen-und-program-ur-staerkung-der-berufsbildung/innovationswettbewerb-invite/innovationswettbewerb-invite.html',
     source: '',
     tags: [],
+    blocktag: ''
   },
 
    /*
@@ -97,6 +100,7 @@
        'website',
        'source',
        'tags',
+       'blocktag',
      ];
      const unknownKeys = difference(keys, validKeys);
      if (unknownKeys.length > 0) {
@@ -117,6 +121,13 @@
        throw new Error('Site description is missing');
      }
    }
+
+   function checkBlocktag() {
+     // this is not mandantory yet
+    // if (!user.blocktag) {
+    //   throw new Error('Blog Tag is missing');
+    // }
+  }
  
    function checkWebsite() {
      if (!user.website) {
@@ -188,6 +199,7 @@
      checkPreview();
      checkTags();
      checkOpenSource();
+     checkBlocktag();
    } catch (e) {
      throw new Error(
        `Showcase site with title=${user.title} contains errors:\n${e.message}`,
