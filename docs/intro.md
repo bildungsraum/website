@@ -12,8 +12,10 @@ Diese Seiten sind noch im Aufbau. Sie beschreiben die Integration von Angeboten 
 
 ## Angebote in der NBP sichtbar machen
 
+Damit Lernende und Lehrende Angebote finden können, müssen diese im Katalog der NBP inkl. guter Beschreibungen und Metadaten hinterlegt sein.
+
 ## Login und SSO
 
-## Nutzerselbstsouveräne Ablage von Nachweissen und Lernständen
+## Nutzerselbstsouveräne Ablage von Nachweisen und Lernständen
 
-## Nutzung von Daten und Diensten der NBP
+## Nutzung von Daten und Diensten der NBP in den eigenen Angeboten
